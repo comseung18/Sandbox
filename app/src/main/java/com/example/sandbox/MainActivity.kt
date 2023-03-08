@@ -1,9 +1,12 @@
 package com.example.sandbox
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sandbox.databinding.ActivityMainBinding.inflate
+import com.example.sandbox.intent.IntentSampleActivity
+import com.example.sandbox.view_stub.ViewStubActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +20,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.btnToStub.setOnClickListener {
+            startActivity(Intent(this, ViewStubActivity::class.java))
+        }
 
+        binding.btnToIntentSample.setOnClickListener {
+            val intent = Intent(
+                this,
+                IntentSampleActivity::class.java
+            ).apply {
+                putExtra("foo", "Foo")
+                putExtra("bar", "Bar")
+            }
+
+            startActivity(intent)
+        }
     }
 }

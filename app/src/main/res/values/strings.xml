@@ -3,4 +3,7 @@
     <string name="name">Name:</string>
     <string name="field_name">field_name</string>
     <string name="this_is_intent_sample_activity">This is IntentSampleActivity</string>
+    <string name="gosegu">gosegu</string>
+    <string name="lazy_load">lazy_load</string>
+    <string name="to_intent_sample">to_intent_sample</string>
 </resources>

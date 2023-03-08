@@ -13,7 +13,12 @@
         android:theme="@style/Theme.Sandbox"
         tools:targetApi="33">
         <activity
-            android:name=".IntentSampleActivity"
+            android:name=".view_stub.ViewStubActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intent.IntentSampleActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
