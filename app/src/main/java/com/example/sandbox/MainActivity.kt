@@ -4,9 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.example.sandbox.databinding.ActivityMainBinding.inflate
 import com.example.sandbox.intent.IntentSampleActivity
 import com.example.sandbox.view_stub.ViewStubActivity
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
